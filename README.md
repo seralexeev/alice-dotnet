@@ -233,9 +233,7 @@ public class Alice : Controller {
   ...
 
   [HttpPost("/alice")]
-  public AliceResponse WebHook([FromBody] AliceRequest req) {
-    return req.Reply("Привет");
-  }
+  public AliceResponse WebHook([FromBody] AliceRequest req) => req.Reply("Привет");
 
   ...
 }
@@ -254,9 +252,7 @@ public class Alice : Controller {
       .Configure(app => app.UseMvc());
 
   [HttpPost("/alice")]
-  public AliceResponse WebHook([FromBody] AliceRequest req) {
-    return req.Reply("Привет");
-  }
+  public AliceResponse WebHook([FromBody] AliceRequest req) => req.Reply("Привет");
 }
 ```
 
