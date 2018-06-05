@@ -23,8 +23,6 @@ $ dotnet add package Microsoft.AspNetCore.Mvc
 
 ## Создание сервера
 
-Протокол скиллов Алисы подразумевает, что разработчик на своей стороне хостит вебхук который отвечает на POST запрос в формате json. Описание протокола можно найти на https://tech.yandex.ru/dialogs/alice/doc/protocol-docpage.
-
 1.  Удаляем файл Program.cs, он нам не нужен и создаем файл `Alice.cs`, в этом файле будет наш контроллер вебхука
 2.  Добавляем импорты:
 
@@ -97,7 +95,7 @@ Application started. Press Ctrl+C to shut down.
 
 ## Описание протокола
 
-Для взаимодействия с api опишем классы
+Для взаимодействия с api опишем классы в соответсвии с https://tech.yandex.ru/dialogs/alice/doc/protocol-docpage
 
 ```csharp
 // Models.cs
